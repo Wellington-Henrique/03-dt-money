@@ -33,10 +33,6 @@ interface TransactionProviderProps {
 export function TransactionsProvider({ children }: TransactionProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
 
-  useEffect(() => {
-    fetchTransactions()
-  }, [])
-
   const fetchTransactions = useCallback(async (query?: string) => {
     const response = await api.get('Transactions', {
       params: {
@@ -65,6 +61,10 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
     },
     [],
   )
+
+  useEffect(() => {
+    fetchTransactions()
+  }, [fetchTransactions])
 
   return (
     <TransactionsContext.Provider
