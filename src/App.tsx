@@ -7,10 +7,10 @@ import { TransactionsProvider } from './contexts/TransactionContext'
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <GlobalStyle/>
-      
+      <GlobalStyle />
+
       <TransactionsProvider>
-        <Transactions/>
+        <Transactions />
       </TransactionsProvider>
     </ThemeProvider>
   )
