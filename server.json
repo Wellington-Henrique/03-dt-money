@@ -15,6 +15,22 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2024-03-07T12:43:47.445Z"
+    },
+    {
+      "description": "FREELA",
+      "price": 1200,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-03-07T17:07:07.073Z",
+      "id": 3
+    },
+    {
+      "description": "Combustível",
+      "price": 50,
+      "category": "Manutenção de Veículos",
+      "type": "outcome",
+      "createdAt": "2024-03-07T17:23:51.362Z",
+      "id": 4
     }
   ]
 }
